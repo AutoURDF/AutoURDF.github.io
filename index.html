@@ -429,7 +429,67 @@ model-viewer {
 
 
 
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <button id="toggleButton" class="button is-primary">more result</button>
+    <div id="foldableContent" style="display: none; margin-top: 20px;">
+      <div class="columns is-vcentered">
+        <!-- Move the title to the left -->
+        <div class="column is-narrow" style="text-align: left;">
+          <div class="title is-5">Ur5 5 DoF</div>
+        </div>
+      </div>
 
+      <div class="columns is-vcentered">
+
+      <!-- <div class="title is-5">Ur5 5 DoF</div>
+      <div class="columns is-vcentered"> -->
+
+        <div class="column is-centered has-text-centered">
+          <span style="display: inline-block; width: 100%; max-width: 300px;">
+            <img src="./static/videos/gif/ur5_data.gif" style="width: 100%; height: auto;">
+          </span>
+        </div>
+
+        <div class="column is-centered has-text-centered">
+          <span style="display: inline-block; width: 100%; max-width: 300px;">
+            <img src="./static/videos/gif/ur5_result.gif" style="width: 100%; height: auto;">
+          </span>
+        </div>
+
+        <div class="column is-centered has-text-centered">
+          <span style="display: inline-block; width: 100%; max-width: 300px;">
+            <model-viewer
+              id="m1"
+              src="static/models/ur59.glb"
+              shadow-intensity="1"
+              environment-image="static/models/thatch_chapel_2k.hdr"
+              auto-rotate
+              rotation-per-second="40deg"
+              camera-controls
+              touch-action="pan-y"
+              style="width: 100%; height: 300px;">
+            </model-viewer>
+          </span>
+        </div>
+      </div>
+
+      <!-- text -->
+      <div class='columns is-vcentered'>
+        <div class="column is-centered has-text-centered">
+          <p style="text-align: center;">Input</p>
+        </div>
+        <div class="column is-centered has-text-centered">
+          <p style="text-align: center;">Output</p>
+        </div>
+        <div class="column is-centered has-text-centered">
+          <p style="text-align: center;">Output</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
 
 
 
@@ -591,48 +651,7 @@ model-viewer {
 
 
 
-<!-- <section class="section">
-  <div class="container" style="text-align: center;">
-    <button id="toggleButton" class="button is-primary">more result</button>
-    <div id="foldableContent" style="display: none; margin-top: 20px;">
 
-
-      <div class="title is-5">pxs, 18 DoF</div>
-      <div class="columns is-vcentered">
-
-        <div class="column is-centered has-text-centered">
-          <span style="display: inline-block; width: 100%; max-width: 300px;">
-            <img src="./static/videos/gif/pxs_data.gif" style="width: 100%; height: auto;">
-          </span>
-        </div>
-
-        <div class="column is-centered has-text-centered">
-          <span style="display: inline-block; width: 100%; max-width: 300px;">
-            <img src="./static/videos/gif/pxs_result.gif" style="width: 100%; height: auto;">
-          </span>
-        </div>
-
-        <div class="column is-centered has-text-centered">
-          <span style="display: inline-block; width: 100%; max-width: 300px;">
-            <model-viewer
-              id="m1"
-              src="static/models/pxs9.glb"
-              shadow-intensity="1"
-              environment-image="static/models/thatch_chapel_2k.hdr"
-              auto-rotate
-              rotation-per-second="40deg"
-              camera-controls
-              touch-action="pan-y"
-              style="width: 100%; height: 300px;">
-            </model-viewer>
-          </span>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section> -->
 
 
 <!-- 
